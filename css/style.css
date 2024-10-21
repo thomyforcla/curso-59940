@@ -1,0 +1,150 @@
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1{
+    color: red;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: "Nunito", sans-serif;
+}
+
+.header {
+    background: linear-gradient(#000a,transparent);
+    background-position: center center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 10px;
+}
+
+.header div img {
+    width: 1.5625rem;
+}
+
+.barraNav {
+    display: flex;
+    list-style: none;
+    gap: 150px;
+}
+
+.barraNav li a {
+    text-decoration: none;
+    color: red;
+}
+
+.section-principal{
+    background-image:url(../assets/golfgti\ fondo.avif) ;
+    width: 100%;
+    height:45rem;
+    background-position: center 1150px;
+    background-size: 1650px;
+}
+
+.location {
+    background-image: url(../assets/fondo5.avif);
+    width: 100%;
+    height: 45rem;
+    background-position: center 1150px;
+}
+
+.locationsite {
+    display: flex;
+    width: 100%;
+    height: 18.75rem;
+    justify-content: center;
+    align-items: center;
+    color: red;
+}
+
+.locationsite p {
+    margin-left: 300px;
+    margin-top: 400px;
+}
+
+.locationsite img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    padding: 10px 100px;
+    margin-top: 400px;
+    margin-right: 300px;
+}
+
+.aboutus {
+    background-image: url(../assets/fondo2.avif);
+    width: 100%;
+    height: 45rem;
+    background-position: center 1150px;
+}
+
+.finance {
+    background-image: url(../assets/fondo6.avif);
+    width: 100%;
+    height: 45rem;
+    background-position: center 1150px;
+}
+
+.finance p {
+    width: 600px;
+    height: 300px;
+    color: red;
+    text-align: center;
+    margin: 30px 500px;
+}
+
+.inventario {
+    background-image: url(../assets/fondo3.avif);
+    width: 100%;
+    height: 45rem;
+    background-position: center 1150px;
+}
+
+.productos {
+    width: 450px;
+    height: 500px;
+}
+
+.card-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 30px;
+}
+
+.card-container2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 30px;
+}
+
+.card1-img {
+    width: 100%;
+    height: 60%;
+}
+
+
+.boton {
+    border-style: solid;
+    border-width: 3px;
+    background-color: red;
+    margin: 10px 10px;
+    width: 200px;
+    height: 40px;
+}
+
+.card1-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.card1 {
+    text-align: center;
+}
