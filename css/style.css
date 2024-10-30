@@ -4,6 +4,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    list-style: none;
 }
 
 h1{
@@ -18,13 +19,199 @@ h1{
     background-position: center center;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
     align-items: center;
     padding: 0px 10px;
+    gap: 20px;
+    width: 100%;
+
 }
 
 .header div img {
-    width: 1.5625rem;
+    width: 20px;
+}
+.parrafo p {
+    text-align: center;
+}
+
+@media (max-width:1024px){
+    .header{
+        flex-direction: column;
+        background-color: #24262b;
+        width: 100%;
+        
+    }
+    .barraNav{
+        flex-direction: row;
+    }
+    .parrafo {
+        justify-self: center;
+        width: 100%;
+    }
+    .parrafo p{
+        justify-self: center;
+        width: 100%;
+        text-align: center;
+    }
+    .lineatiempo p {
+        text-align: center;
+    }
+    .grid-container {
+        display: grid;
+        width: 100%;
+        height: 300px;
+        grid-template-columns: 75px 22% 22% 23% 23% 75px;
+        margin-top: 100px;
+    }
+    .locationsite article p {
+        text-align: center;
+    }
+    iframe {
+        margin-top: 20px;
+    }
+}
+@media (max-width:850px){
+    .header{
+        flex-direction: column;
+        background-color: #24262b;
+        width: 100%;
+        
+    }
+    .barraNav{
+        flex-direction: row;
+        width: 100%;
+    }
+    .parrafo {
+        justify-self: center;
+        width: 100%;
+    }
+    .parrafo p{
+        justify-self: center;
+        width: 100%;
+        text-align: center;
+    }
+    .lineatiempo p {
+        text-align: center;
+    }
+    .grid-container {
+        display: grid;
+        width: 100%;
+        height: 300px;
+        grid-template-columns: 75px 22% 22% 23% 23% 75px;
+        margin-top: 100px;
+    }
+    .locationsite article p {
+        text-align: center;
+    }
+    iframe {
+        margin-top: 20px;
+    }
+}
+
+@media (max-width:768px){
+    .header{
+        flex-direction: column;
+        background-color: #24262b;
+        width: 100%;
+        
+    }
+    .barraNav{
+        flex-direction: column;
+    }
+
+    .parrafo {
+        justify-self: center;
+        width: 100%;
+    }
+    .parrafo p {
+        justify-self: center;
+        width: 100%;
+        text-align: center;
+    }
+    .grid-container {
+        grid-template-rows: 80px 80px 80px 80px;
+        margin-bottom: 100px;
+    }
+    .seccion-2 {
+        grid-column: 3 / 5;
+        grid-row: 1 / 2;
+        background-size: 150% 150%;
+    }
+    .seccion-3 {
+        grid-column: 3 / 5;
+        grid-row: 2 / 3;
+        background-size: 150% 150%;
+    }
+    .seccion-4 {
+        grid-column: 3 / 5;
+        grid-row: 3 / 4;
+        background-size: 150% 150%;
+    }
+    .seccion-5 {
+        grid-column: 3 / 5;
+        grid-row: 4 / 5;
+        background-size: 150% 150%;
+    }
+}
+@media (max-width:425px){
+    .header{
+        flex-direction: column;
+        background-color: #24262b;
+        width: 100%;
+        
+    }
+    .barraNav{
+        flex-direction: column;
+    }
+
+    .parrafo {
+        justify-self: center;
+        width: 100%;
+    }
+    .parrafo p {
+        justify-self: center;
+        width: 100%;
+        text-align: center;
+    }
+}
+@media (max-width:375px){
+    .header{
+        flex-direction: column;
+        background-color: #24262b;
+        width: 100%;
+        
+    }
+    .barraNav{
+        flex-direction: column;
+    }
+
+    .parrafo {
+        justify-self: center;
+        width: 100%;
+    }
+    .parrafo p {
+        justify-self: center;
+        width: 100%;
+        text-align: center;
+    }
+}
+@media (max-width:320px){
+    .header{
+        flex-direction: column;
+        background-color: #24262b;
+        width: 100%;
+        
+    }
+    .barraNav{
+        flex-direction: column;
+    }
+
+    .parrafo {
+        justify-self: center;
+    }
+    .parrafo p {
+        justify-self: center;
+        text-align: center;
+    }
 }
 
 .barraNav {
@@ -33,9 +220,68 @@ h1{
     gap: 150px;
 }
 
+.barraNav li a:hover {
+    background-color: white;
+    border-radius: 4px;
+}
+
 .barraNav li a {
     text-decoration: none;
     color: red;
+}
+
+.container {
+    max-width: 1200px;
+    max-height: 0 auto;
+}
+
+.piedepag {
+    background-color: #24262b;
+    padding: 80px 0;
+}
+
+.footer-row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.links {
+    width: 25%;
+    padding: 0 15px;
+}
+
+.links h2 {
+    font-size: 20px;
+    color: white;
+    margin-bottom: 25px;
+    font-weight: 500;
+    border-bottom: 2px solid red;
+    padding-bottom: 10px;
+    display: inline-block;
+}
+
+.links ul li a {
+    font-size: 18px;
+    text-decoration: none;
+    color: red;
+    display: block;
+    margin-bottom: 15px;
+}
+
+.links ul li a:hover {
+    color: white;
+    padding-left: 6px;
+}
+
+@media(max-width:1024px) {
+    .footer-row {
+        text-align: center;
+    }
+
+    .links {
+        width: 100%;
+        margin-bottom: 30px;
+    }
 }
 
 .section-principal{
@@ -44,6 +290,141 @@ h1{
     height:45rem;
     background-position: center 1150px;
     background-size: 1650px;
+}
+
+.gridindex {
+    display: grid;
+    width: 100%;
+    height: 100vh;
+    grid-template-columns: repeat(6,1fr);
+    grid-template-rows: repeat(3,1fr);
+    grid-template-areas: 
+    "sectionmain-1 sectionmain-1 sectionmain-1 sectionmain-2 sectionmain-2 sectionmain-2"
+    "sectionmain-3 sectionmain-3 sectionmain-3 sectionmain-4 sectionmain-4 sectionmain-4"
+    "sectionmain-5 sectionmain-5 sectionmain-5 sectionmain-6 sectionmain-6 sectionmain-6"
+;
+    gap: 10px;
+}
+
+.sectionmain-1 {
+    background-image: url(../assets/poligono1.jpg);
+    grid-area: sectionmain-1;
+    background-position: center;
+    object-fit: contain;
+    text-align: center;
+    color: red;
+    background-size: 100% 100%;
+}
+
+.sectionmain-1 div:hover {
+    color: white;
+}
+
+.sectionmain-1 div p {
+    margin: 100px;
+    font-size: 45px;
+    font-weight: bold;
+}
+
+
+.sectionmain-2 {
+    background-image: url(../assets/poligono2.jpg);
+    grid-area: sectionmain-2;
+    background-position: center;
+    object-fit: contain;
+    text-align: center;
+    color: red;
+    background-size: 100% 100%;
+}
+
+.sectionmain-2 div p {
+    margin: 100px;
+    font-size: 45px;
+    font-weight: bold;
+}
+
+.sectionmain-2 div:hover {
+    color: white;
+}
+
+.sectionmain-3 {
+    background-image: url(../assets/poligono3.jpg);
+    grid-area: sectionmain-3;
+    background-position: center;
+    object-fit: contain;
+    text-align: center;
+    color: red;
+    background-size: 100% 100%;
+}
+
+.sectionmain-3 div p {
+    margin: 100px;
+    font-size: 45px;
+    font-weight: bold;
+}
+
+.sectionmain-3 div:hover {
+    color: white;
+}
+
+.sectionmain-4 {
+    background-image: url(../assets/poligono4.jpg);
+    grid-area: sectionmain-4;
+    background-position: center;
+    object-fit: contain;
+    text-align: center;
+    color: red;
+    background-size: 100% 100%;
+}
+
+.sectionmain-4 div p {
+    margin: 100px;
+    font-size: 45px;
+    font-weight: bold;
+}
+
+.sectionmain-4 div:hover {
+    color: white;
+}
+
+.sectionmain-5 {
+    background-image: url(../assets/poligono55.jpg);
+    grid-area: sectionmain-5;
+    background-position: center;
+    object-fit: contain;
+    text-align: center;
+    color: rgb(255, 0, 0);
+    background-size: 100% 100%;
+}
+
+.sectionmain-5 div p {
+    margin: 100px;
+    font-size: 45px;
+    font-weight: bold;
+}
+
+.sectionmain-5 div:hover {
+    color: white;
+}
+
+.sectionmain-6 {
+    background-image: url(../assets/poligono6.jpg);
+    grid-area: sectionmain-6;
+    background-position: center;
+    object-fit: contain;
+    text-align: center;
+    color: rgb(255, 0, 0);
+    background-size: 100% 100%;
+}
+
+.sectionmain-6 div p {
+    margin: 100px;
+    font-size: 45px;
+    font-weight: bold;
+}
+
+.sectionmain-6 div:hover {
+    color: white;
 }
 
 .location {
@@ -55,25 +436,19 @@ h1{
 
 .locationsite {
     display: flex;
-    width: 100%;
-    height: 18.75rem;
-    justify-content: center;
-    align-items: center;
     color: red;
+    padding: 150px 500px;
+
+}
+
+iframe {
+    width: max-content;
+    height: 500px;
+
 }
 
 .locationsite p {
-    margin-left: 300px;
-    margin-top: 400px;
-}
-
-.locationsite img {
-    width: 100%;
-    height: 100%;
-    object-fit: contain;
-    padding: 10px 100px;
-    margin-top: 400px;
-    margin-right: 300px;
+    margin: 90px 50px;
 }
 
 .aboutus {
@@ -91,18 +466,46 @@ h1{
 }
 
 .finance p {
-    width: 600px;
-    height: 300px;
+    width: 400px;
+    height: 60px;
     color: red;
     text-align: center;
     margin: 30px 500px;
 }
 
+input {
+    width: 300px;
+    height: 40px;
+    background-color: black;
+    color: red;
+}
+
+
+form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 500px;
+}
+
+.submit {
+    padding: 8px 20px;
+    margin: 10px;
+    border-radius: 4px;
+    background-color: red;
+    border: red;
+    color: black;
+    font-weight: bold;
+}
+
+
+
 .inventario {
     background-image: url(../assets/fondo3.avif);
     width: 100%;
     height: 45rem;
-    background-position: center 1150px;
+    object-fit: cover;
 }
 
 .productos {
@@ -148,3 +551,44 @@ h1{
 .card1 {
     text-align: center;
 }
+
+.grid-container {
+    display: grid;
+    width: 100%;
+    height: 300px;
+    grid-template-columns: 75px 22% 22% 23% 23% 75px;
+    margin-top: 100px;
+}
+
+.seccion-2 {
+    background-image: url(../assets/egor-vikhrev-S0cqn0mZU0E-unsplash.jpg);
+    object-fit: contain;
+    background-position: center;
+    max-width: 100%;
+    max-height: 100%;
+}
+.seccion-3 {
+    background-image: url(../assets/joey-banks-z0Nn2KNHvdU-unsplash.jpg);
+    object-fit: contain;
+    background-position: center;
+}
+.seccion-4 {
+    background-image: url(../assets/hans-m-kN7zIz9oDxE-unsplash.jpg);
+    object-fit: contain;
+    background-position: center;
+}
+.seccion-5 {
+    background-image: url(../assets/peter-broomfield-m3m-lnR90uM-unsplash\ \(1\).jpg);
+    object-fit: contain;
+    background-position: center;
+}
+
+.lineatiempo p {
+    color: red;
+    width: 500px;
+    height: 100px;
+    text-align: center;
+    justify-self: center;
+    margin-top: 20px;
+}
+
